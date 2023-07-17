@@ -11,7 +11,7 @@ namespace DataStructure
         static void Main(string[] args)
         {
             Console.WriteLine("....Data Structure....");
-            Console.WriteLine("\n1:Custom Linked list \n22:Default");
+            Console.WriteLine("\n1:Custom Linked list \n2:Custom Stack \n22:Default");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -85,6 +85,15 @@ namespace DataStructure
                         }
                         Console.ReadLine();
                     }
+                    break;
+                case 2:
+                    CustomStack<int> stack = new CustomStack<int>();
+                    stack.push(56);
+                    stack.push(30);
+                    stack.push(70);
+                    stack.Display();
+                    stack.isEmpty();
+                    stack.Display();
                     break;
             }
                     Console.ReadLine();
