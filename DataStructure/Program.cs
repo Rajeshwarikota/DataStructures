@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static DataStructure.CustomQueue;
 
 namespace DataStructure
 {
@@ -11,7 +12,7 @@ namespace DataStructure
         static void Main(string[] args)
         {
             Console.WriteLine("....Data Structure....");
-            Console.WriteLine("\n1:Custom Linked list \n2:Custom Stack \n22:Default");
+            Console.WriteLine("\n1:Custom Linked list \n2:Custom Stack \n3:Custom Queue \n22:Default");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -94,6 +95,14 @@ namespace DataStructure
                     stack.Display();
                     stack.isEmpty();
                     stack.Display();
+                    break;
+                case 3:
+                    CustomQues<int> Queues = new CustomQues<int>();
+                    Queues.Enqueue(56);
+                    Queues.Enqueue(30);
+                    Queues.Enqueue(70);
+                    Queues.Dequeue();
+                    Queues.Display();
                     break;
             }
                     Console.ReadLine();
